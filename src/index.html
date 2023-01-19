@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    <div class="main-wrapper">
+        @@include('html/header.html')
+        @@include('html/MainPage/_board.html')
+    </div>
+    @@include('html/MainPage/_advantage.html')
+    @@include('html/MainPage/_products.html')
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html> 

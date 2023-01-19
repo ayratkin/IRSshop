@@ -1,0 +1,17 @@
+// Global SCSS imports
+  @import '_reset';
+  @import '_vars';
+  @import 'fonts';
+
+  @import '_global';
+
+// Global components
+    @import 'header';
+
+// Other components
+//  @import 'swiper';
+
+// Main page component
+@import './MainPage/_board';
+@import './MainPage/_advantage';
+@import './MainPage/_products';

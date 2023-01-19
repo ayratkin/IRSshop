@@ -7,14 +7,43 @@
   .navbar {
     display: flex;
 
+    @media(max-width: $breakPoint768) {
+      width: 100%;
+      justify-content: space-between;
+    }
+
     &__logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-right: 65px;
+      min-width: 130px;
+
+      @media(max-width: $breakPoint1440) {
+        margin-right: 25px;
+      }
+
+      @media(max-width: $breakPoint1440) {
+        margin-right: 25px;
+      }
+
+      @media(max-width: $breakPoint480) {
+        max-width: 110px;
+      }
+
+      img {
+        width: 100%;
+      }
     }
 
     &__top-menu {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media(max-width: $breakPoint768) {
+        display: none;
+      }
     }
 
     ul {
@@ -26,6 +55,10 @@
         list-style-type: none;
         margin-right: 25px;
         padding-top: 5px;
+
+        @media(max-width: $breakPoint1440) {
+          margin-right: 15px;
+        }
       }
 
       .top-menu__link {
@@ -62,12 +95,20 @@
     display: flex;
     align-items: center;
 
+    @media(max-width: $breakPoint768) {
+      display: none;
+    }
+
     &__social-links {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 18px;
       // margin-right: 59px;
+
+      @media(max-width: $breakPoint1250) {
+        display: none;
+      }
 
       img {
         width: 28px;
@@ -84,6 +125,14 @@
 
     &__phone {
       margin-left: 59px;
+
+      @media(max-width: $breakPoint992) {
+        display: none;
+      }
+
+      @media(max-width: $breakPoint1440) {
+        margin-left: 40px;
+      }
     }
 
     &__number {
@@ -123,6 +172,14 @@
   justify-content: center;
   transition: 1s all ease;
 
+  @media(max-width: $breakPoint1440) {
+    margin-left: 40px;
+  }
+
+  @media(max-width: $breakPoint1250) {
+    padding: 10px 15px 7px 15px;
+  }
+
 
   &:hover{
     background-color: rgb(0, 0, 0);
@@ -157,6 +214,10 @@
     height: 11px;
     margin-right: 12px;
     transition: 1s all ease;
+
+    @media(max-width: $breakPoint1250) {
+      margin-right: 6px;
+    }
   }
 }
 
@@ -170,6 +231,14 @@
   flex-direction: column;
   justify-content: space-between;
   margin-right: 60px;
+
+  @media(max-width: $breakPoint1440) {
+    margin-right: 25px;
+  }
+
+  @media(max-width: $breakPoint768) {
+    margin-right: 0px;
+  }
 
   .line {
     display: block;

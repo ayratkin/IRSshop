@@ -16,14 +16,8 @@
     <div class="navbar__logo">
       <a href="#"><img src="images/logo.png" alt="site logo" /></a>
     </div>
-
-    <a class="burger-btn">
-      <div class="hamburger-lines">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-      </div>
-    </a>
-
+    <input type="checkbox" class="nav__cb" id="menu-cb" />
+    <label class="nav__btn" for="menu-cb"></label>
     <nav class="navbar__top-menu">
       <ul class="">
         <li class="top-menu__item">
@@ -64,20 +58,26 @@
 </header>
 
         <div class="board">
-  <div class="board__title-wrapper">
-    <h1 class="board__title">Мы создаем корпоративный <span class="crossed-out">мерч</span> облик</h1>
-  </div>
-  <div class="board__subtitle-wrapper">
-    <h3 class="board__subtitle">С 2013 и делаем это как надо</h3>
+  <div class="board__text">
+    <div class="board__title-wrapper">
+      <h1 class="board__title">
+        Мы создаем корпоративный <span class="crossed-out">мерч</span> облик
+      </h1>
+    </div>
+    <div class="board__subtitle-wrapper">
+      <h3 class="board__subtitle">С 2013 и делаем это как надо</h3>
+    </div>
   </div>
   <div class="board__footer">
     <div class="board__buy-buttons">
       <a href="#" class="outline-btn">Заказать расчет</a>
       <a href="#" class="outline-btn">Подобрать решение</a>
     </div>
-    <div class="filled-btn">
-      <img src="images/like.png" alt="like image" />
-      <p>Гарантия качества на все изделия</p>
+    <div class="filled-btn-wrapper">
+      <div class="filled-btn">
+        <img src="images/like.png" alt="like image" />
+        <p>Гарантия качества на все изделия</p>
+      </div>
     </div>
   </div>
 </div>
@@ -103,7 +103,7 @@
     <div class="products">
   <div class="container">
     <div class="products__header">
-      <h3 class="products__title">Готовые решения для вашего бизнеса</h3>
+      <h3 class="title">Готовые решения для вашего бизнеса</h3>
       <div class="products__arrows">
         <img src="images/arrow-left.png" alt="" class="left-arrow" />
         <img src="images/arrow-right.png" alt="" class="right-arrow" />
@@ -282,6 +282,103 @@
 
   </div>
 </div>
+    <div class="choice">
+  <div class="container">
+    <h3 class="title choice__title">Но чаще выбирают вот так</h3>
+    <div class="choice__cards">
+
+      <a href="#" class="card">
+        <!-- <img src="images/Rectangle 393.png" alt="" class="card_bg"> -->
+        <div class="card__header">
+          <p class="card__title">Толстовка + шоппер</p>
+          <p class="card__subtitle">Подробнее</p>
+        </div>
+        <div class="card__footer">
+          <p class="card__footer-text">Предпочитают </p>
+          <div class="card__icons">
+            <img src="../../images/Group 514.png" alt="icon" class="card__icon">
+            <img src="../../images/Group 515.png" alt="icon" class="card__icon">
+            <img src="../../images/Group 516.png" alt="icon" class="card__icon">
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <div class="card__header">
+          <p class="card__title">Подголовник + маска для сна</p>
+          <p class="card__subtitle">Подробнее</p>
+        </div>
+        <div class="card__footer">
+          <p class="card__footer-text">Предпочитают </p>
+          <div class="card__icons">
+            <img src="../../images/Group 514.png" alt="icon" class="card__icon">
+            <img src="../../images/Group 515.png" alt="icon" class="card__icon">
+            <img src="../../images/Group 516.png" alt="icon" class="card__icon">
+          </div>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <div class="card__header">
+          <p class="card__title">Кофр + дорожная сумка</p>
+          <p class="card__subtitle">Подробнее</p>
+        </div>
+        <div class="card__footer">
+          <p class="card__footer-text">Предпочитают </p>
+          <div class="card__icons">
+            <img src="../../images/Group 514.png" alt="icon" class="card__icon">
+            <img src="../../images/Group 515.png" alt="icon" class="card__icon">
+            <img src="../../images/Group 516.png" alt="icon" class="card__icon">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+    <div class="cost">
+  <div class="container">
+    <div class="cost__header">
+      <h3 class="title cost__title">Рассчитать стоимость изделия</h3>
+      <p class="cost__subtitle">
+        Наш специалист свяжется с вами в ближайщее время
+      </p>
+    </div>
+    <form action="" class="cost__form">
+      <input type="text" class="cost__input" placeholder="Имя" />
+      <input type="text" class="cost__input" placeholder="Почта" />
+      <input type="tel" class="cost__input" placeholder="Телефон" />
+      <div class="cost__buttons-wrapper">
+        <button class="cost__button">Да, жду</button>
+        <p class="cost__button-descriptions">
+          Нажимая кнопку «Да, жду» вы даёте
+          <a href="#">согласие на обработку персональных данных</a>
+        </p>
+      </div>
+    </form>
+    <div class="cost__bg"></div>
+  </div>
+</div>
+
+    <div class="examples">
+  <div class="container">
+    <div class="examples__header">
+        <div class="title examples__title">MASTER’S вокруг тебя</div>
+        <div class="examples__subtitle">Наши работы</div>
+    </div>
+    <!-- <div class="examples__wrapper">
+        <div class="column1"></div>
+        <div class="column2">
+            <div class="column2__row1"></div>
+            <div class="column2__row2">
+
+            </div>
+        </div>
+        <div class="column3"></div>
+    </div> -->
+  </div>
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>

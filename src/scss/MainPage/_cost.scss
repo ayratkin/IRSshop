@@ -1,0 +1,117 @@
+.cost {
+  padding: 40px 40px 75px 40px;
+  background-color: #7166dd;
+  position: relative;
+
+  // .cost__header
+  &__header {
+  }
+
+  // .cost__title
+  &__title {
+    color: white;
+  }
+
+  // .cost__subtitle
+  &__subtitle {
+    margin-top: 15px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+  }
+
+  // .cost__form
+  &__form {
+    margin-top: 48px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  // .cost__input
+  &__input {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+    min-width: 370px;
+    min-height: 67px;
+    background: #8579ff;
+    border: 1px solid #9b92ff;
+    border-radius: 5px;
+    padding: 25px 30px;
+    box-sizing: border-box;
+    color: white;
+
+    &:focus {
+      outline: 1px solid white;
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+
+  // .cost__button-wrapper
+  &__buttons-wrapper {
+    margin-left: 8px;
+  }
+
+  // .cost__button
+  &__button {
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 0.03em;
+    min-width: 370px;
+    min-height: 67px;
+    background: white;
+    border-radius: 5px;
+    padding: 23px 30px 22px 30px;
+    box-sizing: border-box;
+    color: #7166dd;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.25s all ease;
+    cursor: pointer;
+    
+
+    &:hover {
+        background: #8579ff;;
+        color: white;
+        transition: 0.25s all ease;
+        box-sizing: border-box;
+        outline: 1px solid white;
+    }
+  }
+
+  // .cost__button-descriptions
+  &__button-descriptions {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+
+    a {
+        color: white;
+    }
+  }
+
+  // .cost__bg
+  &__bg {
+    position: absolute;
+    top: 277px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url('../../images/Group372.png');
+  }
+}

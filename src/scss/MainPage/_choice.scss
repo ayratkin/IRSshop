@@ -1,0 +1,84 @@
+.choice {
+  margin-top: 60px;
+  padding-bottom: 80px;
+
+  // .choice__title
+  &__title {
+  }
+
+  // .choice__cards
+  &__cards {
+    margin-top: 57px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .card {
+    width: 480px;
+    min-height: 260px;
+    position: relative;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+
+    &:nth-child(1) {
+        background: url('../../images/choice-img1.png');
+    }
+    
+    &:nth-child(2) {
+        background: url('../../images/Rectangle394.png');
+    }
+
+    &:nth-child(3) {
+        background: url('../../images/Rectangle393.png');
+    }
+
+    // .card__header
+    &__header {
+      margin-top: 16px;
+      margin-left: 25px;
+    }
+
+    // .card__title
+    &__title {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 28px;
+    }
+
+    // .card__subtitle
+    &__subtitle {
+      margin-top: 11px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    // .card__footer
+    &__footer {
+      margin-top: 104px;
+      margin-left: 25px;
+    }
+
+    // .card__footer-text
+    &__footer-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+    }
+
+    // .card__icons
+    &__icons {
+      margin-top: 10px;
+    }
+
+    // .card__icon
+    &__icon {
+    }
+  }
+}

@@ -1,18 +1,15 @@
 function burger() {
-    const burgerBtn = document.querySelector('.hamburger-lines');
-    const burgerLines = document.querySelectorAll('.line');
-    // const menu = document.querySelector('.menu');
+  let burgerBtn = document.querySelector('.navbar__btn')
+  let burgerBtnCheckbox = document.querySelector('.navbar__cb');
+  let burgerNavbar = document.querySelector('.burger-navbar');
+  let navbar = document.querySelector('.navbar');
 
-    burgerBtn.addEventListener('click', () => {
-        burgerBtn.classList.toggle('hamburger-lines_active');
-        // menu.classList.toggle('menu_active');
-
-        // Анимация кнопки
-        burgerLines.forEach((elem) => {
-            elem.classList.toggle('active');
-        });
-        
-    });
+  burgerBtnCheckbox.addEventListener('click', () => {
+    burgerNavbar.classList.toggle('burger-navbar_active');
+    burgerBtn.classList.toggle('navbar__btn_active');
+    navbar.classList.toggle('navbar_active');
+    
+  })
 
 }
 

@@ -16,8 +16,11 @@
   // .products__cards
   &__cards {
     display: flex;
-    gap: 39px;
+    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 40px;
+
+
   }
 }
 .left-arrow {
@@ -40,6 +43,11 @@
     &:hover {
       background: #7166dd;
       transition: 0.25s all ease;
+    }
+
+    @media(max-width: 1520px) {
+      width: 300px;
+      height: 300px;
     }
   }
 

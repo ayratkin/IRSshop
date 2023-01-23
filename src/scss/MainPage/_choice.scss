@@ -2,6 +2,18 @@
   margin-top: 60px;
   padding-bottom: 80px;
 
+  @media (max-width: $breakPoint992) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: $breakPoint768) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $breakPoint480) {
+    margin-top: 0px;
+  }
+
   // .choice__title
   &__title {
   }
@@ -11,8 +23,21 @@
     margin-top: 57px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
+
+    @media (max-width: 1250px) {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @media (max-width: $breakPoint992) {
+      margin-top: 40px;
+    }
+  
+    @media (max-width: $breakPoint768) {
+      margin-top: 20px;
+    }
   }
 
   .card {
@@ -23,16 +48,30 @@
     text-decoration: none;
     color: black;
 
-    &:nth-child(1) {
-        background: url('../../images/choice-img1.png');
+    @media(max-width: 1250px) {
+      width: 400px;
     }
-    
+
+    @media(max-width: 992px) {
+      width: 480px;
+    }
+
+    &:nth-child(1) {
+      background: url("../../images/choice-img1.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
     &:nth-child(2) {
-        background: url('../../images/Rectangle394.png');
+      background: url("../../images/Rectangle394.png") no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     &:nth-child(3) {
-        background: url('../../images/Rectangle393.png');
+      background: url("../../images/Rectangle393.png") no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     // .card__header
@@ -46,6 +85,16 @@
       font-weight: 500;
       font-size: 30px;
       line-height: 28px;
+
+      @media (max-width: $breakPoint992) {
+        font-size: 23px;
+        line-height: 21px;
+      }
+
+      @media (max-width: $breakPoint480) {
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
 
     // .card__subtitle
@@ -56,6 +105,10 @@
       line-height: 16px;
       letter-spacing: 0.03em;
       text-transform: uppercase;
+
+      @media(max-width: $breakPoint768) {
+        display: none;
+      }
     }
 
     // .card__footer

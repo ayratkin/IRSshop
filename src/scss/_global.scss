@@ -14,10 +14,29 @@ body {
     padding: 20px;
     width: 100%;
     margin: 0 auto;
+
+    @media(max-width: $breakPoint768) {
+      padding: 20px 26px;
+    }
 }
 
 .title {
   font-weight: 700;
   font-size: 40px;
   line-height: 46px;
+
+  @media(max-width: $breakPoint992) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  @media(max-width: $breakPoint768) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  @media(max-width: $breakPoint480) {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }

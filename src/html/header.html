@@ -26,21 +26,67 @@
     </nav>
   </div>
   <div class="burger-navbar">
-    <p>some text</p>
+    <div class="burger-navbar__column">
+      <p class="burger-navbar__title">О компании</p>
+      <ul class="burger-navbar__menu">
+        <li class="burger-navbar__menu-item"><a href="#">Каталог </a></li>
+        <li class="burger-navbar__menu-item"><a href="#">Услуги</a></li>
+        <li class="burger-navbar__menu-item"><a href="#">О нас</a></li>
+        <li class="burger-navbar__menu-item"><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="burger-navbar__column">
+      <p class="burger-navbar__title">Заказчикам</p>
+      <ul class="burger-navbar__menu">
+        <li class="burger-navbar__menu-item"><a href="#">Доставка </a></li>
+        <li class="burger-navbar__menu-item"><a href="#">Вопрос-ответ</a></li>
+        <li class="burger-navbar__menu-item"><a href="#">Отзывы</a></li>
+        <li class="burger-navbar__menu-item">
+          <a href="#">Ответственность сторон</a>
+        </li>
+      </ul>
+    </div>
+    <div class="burger-navbar__column">
+      <p class="burger-navbar__subtitle">Давайте общаться, выберите удобный вариант для связи</p>
+      <ul class="burger-navbar__menu">
+        <li class="burger-navbar__menu-item">
+          <div class="phone">
+            <a href="tel:+79271295730" class="phone__number">
+              +7 927 129 57 30
+            </a>
+            <p class="phone__descriptions">
+              Пн-пт с 09:00 до 18:00
+            </p>
+          </div>
+        </li>
+        <li class="burger-navbar__menu-item">
+          <div class="social-links">
+            <a href="#"><img src="@img/phone.png" alt="phone number icon" /></a>
+            <a href="#"><img src="@img/telegram.png" alt="telegram icon" /></a>
+          </div>
+        </li>
+        <li class="burger-navbar__menu-item">
+          <a href="#" class="call-btn">
+            <img src="@img/btn-phone.png" alt="" class="call-btn__icon" />
+            <p class="call-btn__text">Заказать звонок</p>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <div class="feedback">
-    <div class="feedback__social-links">
+    <div class="social-links feedback__social-links">
       <a href="#"><img src="@img/phone.png" alt="phone number icon" /></a>
       <a href="#"><img src="@img/telegram.png" alt="telegram icon" /></a>
     </div>
 
-    <div class="feedback__phone">
-      <a href="tel:+79271295730" class="feedback__number">+7 927 129 57 30</a>
-      <p class="feedback__descriptions">Пн-пт с 09:00 до 18:00</p>
+    <div class="phone feedback__phone">
+      <a href="tel:+79271295730" class="phone__number feedback__number">+7 927 129 57 30</a>
+      <p class="phone__descriptions feedback__descriptions">Пн-пт с 09:00 до 18:00</p>
     </div>
 
-    <a href="#" class="call-btn">
+    <a href="#" class="call-btn feedback__call-btn">
       <img src="@img/btn-phone.png" alt="" class="call-btn__icon" />
       <p class="call-btn__text">Заказать звонок</p>
     </a>

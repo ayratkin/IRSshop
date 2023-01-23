@@ -1,16 +1,43 @@
 .products {
   margin-top: 60px;
 
+  @media (max-width: $breakPoint992) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: $breakPoint768) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: $breakPoint480) {
+    margin-top: 0px;
+  }
+
   // .products__header
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 60px;
+
+    @media (max-width: $breakPoint992) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $breakPoint768) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $breakPoint480) {
+      margin-bottom: 20px;
+    }
   }
 
   // .products__arrows
   &__arrows {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   // .products__cards
@@ -19,63 +46,134 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
+  }
 
+  .card {
+    width: 350px;
+    // margin-bottom: 40px;
 
+    @media (max-width: 1520px) {
+      width: 300px;
+    }
+
+    @media (max-width: 992px) {
+      width: 250px;
+      // margin-bottom: 40px;
+    }
+
+    @media (max-width: 550px) {
+      width: 200px;
+    }
+
+    @media (max-width: 450px) {
+      width: 180px;
+    }
+
+    @media (max-width: 400px) {
+      width: 150px;
+    }
+
+    // .card__image
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 350px;
+      height: 350px;
+      background-color: #f6f6fa;
+      transition: 0.8s all ease;
+      border-radius: 5px;
+
+      @media (max-width: 1520px) {
+        width: 100%;
+        height: 300px;
+      }
+
+      @media (max-width: 992px) {
+        width: 250px;
+        height: 250px;
+      }
+
+      @media (max-width: 550px) {
+        width: 200px;
+        height: 200px;
+      }
+
+      @media (max-width: 450px) {
+        width: 180px;
+        height: 180px;
+      }
+
+      @media (max-width: 400px) {
+        width: 150px;
+        height: 150px;
+      }
+
+      &:hover {
+        background: #7166dd;
+        transition: 0.25s all ease;
+      }
+    }
+
+    // .card__product-image
+    &__product-image {
+      @media (max-width: 1520px) {
+        width: 200px;
+        height: 200px;
+      }
+
+      @media (max-width: 992px) {
+        width: 150px;
+        height: 150px;
+      }
+
+      @media (max-width: 480px) {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    // .card__text
+    &__text {
+    }
+
+    // .card__title
+    &__title {
+      margin-top: 15px;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+
+      @media (max-width: $breakPoint992) {
+        font-size: 23px;
+        line-height: 21px;
+      }
+
+      @media (max-width: $breakPoint480) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    // .card__subtitle
+    &__subtitle {
+      margin-top: 12px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+
+      @media (max-width: $breakPoint480) {
+        display: none;
+      }
+    }
   }
 }
 .left-arrow {
   margin-right: 45px;
 }
 .right-arrow {
-}
-.card {
-  // .card__image
-  &__image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-    height: 350px;
-    background-color: #f6f6fa;
-    transition: 0.8s all ease;
-    border-radius: 5px;
-
-    &:hover {
-      background: #7166dd;
-      transition: 0.25s all ease;
-    }
-
-    @media(max-width: 1520px) {
-      width: 300px;
-      height: 300px;
-    }
-  }
-
-  // .card__product-image
-  &__product-image {
-  }
-
-  // .card__text
-  &__text {
-  }
-
-  // .card__title
-  &__title {
-    margin-top: 15px;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-  }
-
-  // .card__subtitle
-  &__subtitle {
-    margin-top: 12px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: 0.01em;
-  }
 }
 
 .image-slider {

@@ -1,7 +1,11 @@
 .cost {
-  padding: 40px 40px 75px 40px;
+  width: 100%;
+  padding-bottom: 95px;
+  display: block;
   background-color: #7166dd;
   position: relative;
+  display: flex;
+  align-items: center;  
 
   // .cost__header
   &__header {
@@ -20,12 +24,14 @@
     font-size: 20px;
     line-height: 19px;
     letter-spacing: 0.01em;
+    
   }
 
   // .cost__form
   &__form {
     margin-top: 48px;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
   }
@@ -61,11 +67,14 @@
 
   // .cost__button-wrapper
   &__buttons-wrapper {
+    
     margin-left: 8px;
+    width: 370px;
   }
 
   // .cost__button
   &__button {
+    
     font-weight: 500;
     font-size: 19px;
     letter-spacing: 0.03em;
@@ -93,6 +102,7 @@
 
   // .cost__button-descriptions
   &__button-descriptions {
+    
     margin-top: 15px;
     font-weight: 400;
     font-size: 14px;
@@ -108,7 +118,7 @@
   // .cost__bg
   &__bg {
     position: absolute;
-    top: 277px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 120px;

@@ -8,7 +8,6 @@ function burger() {
     burgerNavbar.classList.toggle('burger-navbar_active');
     burgerBtn.classList.toggle('navbar__btn_active');
     navbar.classList.toggle('navbar_active');
-    
   })
 
 }
